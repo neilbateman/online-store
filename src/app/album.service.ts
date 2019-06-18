@@ -9,5 +9,11 @@ export class AlbumService {
   getAlbums() {
     return ALBUMS;
   }
-
+  getAlbumsById(albumId: number){
+    for (var i = 0; i < ALBUMS.length; i++) {
+      if (ALBUMS[i].id === albumId) {
+        return ALBUMS[i];
+      }
+    }
+  }
 }
