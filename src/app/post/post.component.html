@@ -1,0 +1,59 @@
+<!-- <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Post to Inventory</h3>
+  </div>
+  <div class= "panel-body">
+    <div>
+      <div>
+        <label>Post Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Post Comment:</label>
+        <br>
+        <input #newComment>
+      </div>
+
+      <div>
+        <label>Post Link:</label>
+        <br>
+        <textarea #newLink></textarea>
+      </div>
+      <button (click)="submitForm(newTitle.value, newComment.value, newLink.value); newTitle.value=''; newComment.value=''; newLink.value=''">Add</button>
+    </div>
+  </div>
+</div> -->
+<form class="ui form segment">
+  <h3 class="ui header">Add a Link</h3>
+
+  <div class="field">
+    <label for="title">Title:</label>
+    <input name="title" #newtitle>
+  </div>
+  <div class="field">
+    <label for="comment">Comment:</label>
+    <input name="comment" #newComment>
+  </div>
+  <div class="field">
+    <label for="link">Post Link:</label>
+    <input name="link" #newlink>
+  </div>
+  <button (click)="submitForm(newtitle.value, newComment.value, newlink.value);newTitle.value=''; newComment.value=''; newLink.value=''"
+    class="ui button">
+    Submit link
+  </button>
+  <div class="field">
+    <label for="file">File:</label>
+    <input type="file" (change)="upload($event)" accept=".png,.jpg" />
+  </div>
+</form>
+<!-- <div class="ui posts">
+  <div *ngFor="let post of posts | async">
+      <app-post [post]=post></app-post>
+</div> -->
+
+<div>
+  <app-postplace></app-postplace>
+</div>

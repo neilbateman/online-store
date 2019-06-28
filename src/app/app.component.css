@@ -1,0 +1,62 @@
+.img {
+  width:50px;
+    height:25px;
+}
+._2u8LqkbMtzd0lpblMFbJq5 {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+}
+
+.cx1ohrUAq6ARaXTX2u8YN {
+    -ms-flex: 0;
+    flex: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 80;
+    margin-top: 0;
+}
+._1tvdSTbdxaK-BnUbzUIqIY {
+    color: var(--newCommunityTheme-bodyText);
+}
+._2GyPfdsi-MbQFyHRECo9GO {
+    height: 48px;
+}
+._2GyPfdsi-MbQFyHRECo9GO, ._30BbATRhFv3V83DHNDjJAO {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, button, cite, code, del, dfn, em, img, input, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+.footer {
+  display: inline-block;
+}
+
+.ui link {
+  float: right;
+}

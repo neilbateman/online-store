@@ -1,22 +1,102 @@
-<nav class="navbar navbar-default">
+<!-- <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="">Epicodus Tunes</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="about">About</a></li>
-      <li><a routerLink="marketplace">Marketplace</a></li>
+
     </ul>
   </div>
-</nav>
+</nav> -->
 
-<div class="container">
-  <h1>{{title}}</h1>
+<div class="ui menu">
+  <!-- <div class="ui container"> -->
+  <div class="ui logo">
+    <div class="ui input">
+      <div class="header item borderless">
+  <img class="ui tiny rounded circular image" src="/assets/images/reddit.png">
+  </div>
+<div class="header item borderless">
+  <select class="ui dropdown">
+  <option value="">Popular</option>
+  <option value="1">All</option>
+  <option value="0">Original Content</option>
+</select>
+</div>
+<div class="header item borderless">
+<div class="ui search">
+  <div class="ui icon input">
+    <input class="prompt" type="text" placeholder="Search Redundant Reddit...">
+    <i class="search icon"></i>
+  </div>
+  <!-- <div class="results"></div> -->
+</div>
+</div>
+<!-- <input type="text" placeholder="Search..."> -->
+</div>
+</div>
+
+    <div class="header item borderless">
+
+      <h1 class="ui header">
+        Neil's Redundant Reddit Clone
+
+      </h1>
+
+    </div>
+    <div class="header item borderless">
+        <button class="ui button">
+    <a routerLink="post">Add a post</a>
+  </button>
+        </div>
+        <div class="header item borderless">
+        <button class="ui button">
+  LOGIN
+</button>
+</div>
+<div class="header item borderless">
+<button class="ui button">
+SIGN UP
+</button>
+</div>
+<!-- <div class="ui button">
+<button >Primary</button>
+</div>
+<div class="header item borderless">
+<button mat-raised-button>Primary</button>
+</div> -->
+
+
+    </div>
+    <!-- <div class="ui segment"> -->
+    <!-- <div class="div-middle">
+       <div>One</div>
+       <div>After</div>
+       <div>Another</div> -->
+
+
+ <!-- </div> -->
+
+
+<!-- </div> -->
+<!-- <div class= "ui two wide grid segment">
+  </div> -->
+<!-- <div class="ui container">
+  <div ngui-sticky >
+    <div>One</div>
+    <div>After</div>
+    <div>Another</div>
+  </div>
+  </div> -->
+
+<div class="ui main text container">
   <router-outlet></router-outlet>
 </div>
 
-<footer class="footer">
-  <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
+<footer class="ui footer">
+  <div class="ui container">
+    <a routerLink="about">About</a><br>
+    <a routerLink="postplace">Postplace</a><br>
+    <a class="text-muted" routerLink="post">Add a post</a>
   </div>
 </footer>

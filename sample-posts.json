@@ -1,0 +1,17 @@
+{ "posts": [{
+    "title": " Piper At The Gates of Dawn",
+    "comment": "Pink Floyd",
+    "link": "A live  post by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.",
+    "id": "1"
+    }, {
+    "title": "Dilate",
+    "comment": "Ani DiFranco",
+    "link": "Her highest-selling and most acclaimed post, released in 1996.",
+    "id": "2"
+      }, {
+    "title": "Axis Bold As Love",
+    "comment": "Jimi Hendrix",
+    "link": "Second studio post by the English-American band, released in 1967.",
+    "id": "3"
+  }]
+}

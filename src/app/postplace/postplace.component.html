@@ -1,0 +1,66 @@
+  <!-- <h3 class="ui header">Postplace</h3>
+  <div class="ui six wide medium padding grid-container segment">
+
+<div class="ui posts">
+<div *ngFor="let post of posts | async" (click)="goToDetailPage(post)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{post.title}}</em> <br> {{post.link}} <br> {{post.comment}}</h3>
+  </div>
+  </div>
+  </div>
+</div> -->
+<div *ngFor="let post of posts | async"class="panel panel-default">
+<div class="ui six wide medium padding grid-container segment">
+            <div class="ui four wide grid-container">
+              <div class="four wide column center aligned votes">
+                <div class="value">
+                  {{ post.votes }}
+                </div>
+                <div class="ui large label">
+                  Points
+                </div>
+              </div>
+            <div class="six wide column segment">
+              <a class="medium header" (click)="goToDetailPage(post)" >
+                {{ post.title }}
+              </a>
+              <div class="medium header">
+                {{ post.comment }}
+            </div>
+
+              <div class="ui small header">
+                {{ post.link }}
+              </div>
+              <div class="ui medium label">
+              <ul class="ui list voters">
+
+
+                <li class="item">
+                  <a href (click)="upVote()">
+                    <i class="arrow up icon"></i>
+                      <!-- upvote -->
+                  </a>
+                </li>
+                <div class="value">
+                  {{ post.votes }}
+                </div>
+                <li class="item">
+                  <a href (click)="downVote()">
+                    <i class="arrow down icon"></i>
+                      <!-- downvote -->
+                  </a>
+                </li>
+              </ul>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+
+            <div *ngIf="currentRoute === '/post'">
+              {{post.link}}
+              <hr>
+              <app-edit-post></app-edit-post>
+            </div>

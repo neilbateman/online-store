@@ -2,30 +2,30 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { AdminComponent } from './admin/admin.component';
+import { PostplaceComponent } from './postplace/postplace.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostComponent } from './post/post.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    component: WelcomeComponent
+    component: PostplaceComponent
   },
   {
     path: 'about',
     component: AboutComponent
   },
    {
-    path: 'marketplace',
-    component: MarketplaceComponent
+    path: 'postplace',
+    component: PostplaceComponent
   },
   {
-    path: 'albums/:id',
-    component: AlbumDetailComponent
+    path: 'posts/:id',
+    component: PostDetailComponent
   },
   {
-    path: 'admin',
-    component: AdminComponent
+    path: 'post',
+    component: PostComponent
   }
 ];
 

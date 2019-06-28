@@ -10,10 +10,11 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { AdminComponent } from './admin/admin.component';
-import { EditAlbumComponent } from './edit-album/edit-album.component';
+import { PostplaceComponent } from './postplace/postplace.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostComponent } from './post/post.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
+import { NguiStickyModule } from '@ngui/sticky';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,10 +29,10 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    MarketplaceComponent,
-    AlbumDetailComponent,
-    AdminComponent,
-    EditAlbumComponent
+    PostplaceComponent,
+    PostDetailComponent,
+    PostComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,
@@ -39,8 +40,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
-
+    AngularFireDatabaseModule,
+    NguiStickyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
